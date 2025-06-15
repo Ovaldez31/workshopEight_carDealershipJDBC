@@ -19,7 +19,7 @@ public class SalesDao {
                 Connection connection = dataSource.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(query)
         ){
-            preparedStatement.setString(1, contract.getSalesVin());
+            preparedStatement.setString(1, contract.getVin());
             preparedStatement.setString(2, contract.getCustomerName());
             preparedStatement.setDouble(3, contract.getSalesPrice());
             preparedStatement.setString(4, contract.getDate());
